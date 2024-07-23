@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Fusee" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.43 68.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #6c7b7f;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #000;
+      }
+
+      .cls-3 {
+        fill: #9bb2aa;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #fdfdfd;
+      }
+    </style>
+  </defs>
+  <g>
+    <path class="cls-4" d="M14.22,0v63.57h-3.07v5.28H3.91v-12.33l-3.91.2h0c0-3.17,1.04-6.26,2.95-8.79l3.12-4.12v-27.39C9,3.89,14.22,0,14.22,0Z"/>
+    <path class="cls-4" d="M14.22,0v63.57h3.07v5.28h7.24v-12.33l3.91.2h0c0-3.17-1.04-6.26-2.95-8.79l-3.12-4.12v-27.39C19.43,3.89,14.22,0,14.22,0Z"/>
+  </g>
+  <path class="cls-3" d="M14.22,0v45.96l10.3,10.57,3.91.2h0c0-3.17-1.04-6.26-2.95-8.79l-3.12-4.12v-27.39C19.43,3.89,14.22,0,14.22,0Z"/>
+  <path class="cls-1" d="M14.22,0v16.49l8.15-.07C19.43,3.89,14.22,0,14.22,0Z"/>
+  <rect class="cls-2" x="14.22" y="28.95" width="3.52" height="30.9"/>
+  <circle class="cls-5" cx="14.22" cy="16.49" r="4.99"/>
+  <circle class="cls-2" cx="14.22" cy="16.49" r="2.3"/>
+  <rect class="cls-1" x="10.7" y="28.95" width="3.52" height="30.9"/>
+</svg>
