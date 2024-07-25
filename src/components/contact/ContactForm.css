@@ -1,0 +1,43 @@
+.contact-form-background {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contact-form-container {
+    height: 100%;
+    background-color: #003d52;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.contact-form {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.submit-button {
+    border: 1px solid #ff5859 !important;
+    background-color: #0000 !important;
+    font-size: 1rem !important;
+    color: #ff5859 !important;
+    border-radius: 5px !important;
+    transition: all 0.5s !important;
+}
+
+.submit-button:hover {
+    background-color: #ff5859 !important;
+    color: #003d52 !important;
+}

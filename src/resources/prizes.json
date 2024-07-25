@@ -1,0 +1,73 @@
+{
+    "prizes": [
+        {
+            "id": 1,
+            "name": {
+                "fr": "Hackathon \"24h du code\" - sujet STMicroelectronics",
+                "en": "Hackathon \"24h du code\" - STMicroelectronics subject"
+            },
+            "date": {
+                "month": 3,
+                "year": 2022
+            },
+            "time": 24,
+            "timeUnit": {
+                "fr": "heures",
+                "en": "hours"
+            },
+            "rank": "1st",
+            "description": {
+                "fr": "Concours de programmation sur 24h organisé par \"la ruche numérique\". Nous avons choisit le sujet de STMicroelectronics qui portait sur de la programmation embarquée. Nous avons fini premier de la compétition.",
+                "en": "24h programming contest organized by \"la ruche numérique\". We chose the STMicroelectronics subject which was about embedded programming. We finished first in the competition."
+            },
+            "image": "img/24h1.jpg",
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:6917144881232556032/"
+        },
+        {
+            "id": 2,
+            "name": {
+                "fr": "Hackathon \"24h du code\" - sujet STMicroelectronics",
+                "en": "Hackathon \"24h du code\" - STMicroelectronics subject"
+            },
+            "date": {
+                "month": 4,
+                "year": 2023
+            },
+            "time": 24,
+            "timeUnit": {
+                "fr": "heures",
+                "en": "hours"
+            },
+            "rank": "2nd",
+            "description": {
+                "fr": "Concours de programmation sur 24h organisé par \"la ruche numérique\". Nous avons choisit le sujet de STMicroelectronics qui portait sur de la programmation embarquée. Nous avons fini deuxième de la compétition.",
+                "en": "24h programming contest organized by \"la ruche numérique\". We chose the STMicroelectronics subject which was about embedded programming. We finished second in the competition."
+            },
+            "image": "img/24h2.jpg",
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:7047861864323526656/"
+        },
+        {
+            "id": 3,
+            "name": {
+                "fr": "Hackathon \"24h du code\" - sujet STMicroelectronics",
+                "en": "Hackathon \"24h du code\" - STMicroelectronics subject"
+            },
+            "date": {
+                "month": 4,
+                "year": 2024
+            },
+            "time": 24,
+            "timeUnit": {
+                "fr": "heures",
+                "en": "hours"
+            },
+            "rank": "1st",
+            "description": {
+                "fr": "Concours de programmation sur 24h organisé par \"la ruche numérique\". Nous avons choisit le sujet de STMicroelectronics qui portait sur de la programmation embarquée. Nous avons fini premier de la compétition.",
+                "en": "24h programming contest organized by \"la ruche numérique\". We chose the STMicroelectronics subject which was about embedded programming. We finished first in the competition."
+            },
+            "image": "img/24h3.jpg",
+            "link": "https://www.linkedin.com/feed/update/urn:li:activity:7183742922146643968/"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+.chip {
+    transition: all 0.5s ease;
+    color: #fff;
+}
+
+.shimmering {
+    animation: shimmer 1.5s 5;
+}
+
+@keyframes shimmer {
+    0% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0);
+    }
+}

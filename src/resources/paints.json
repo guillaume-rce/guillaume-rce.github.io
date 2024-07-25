@@ -1,0 +1,20 @@
+{
+    "types": [
+        {
+            "fr": "Aquarelle",
+            "en": "Watercolor"
+        }
+    ],
+    "paints": [
+        {
+            "id": 1,
+            "name": {
+                "fr": "Envoûtement du hibou crépusculaire",
+                "en": "Bewitchment of the twilight owl"
+            },
+            "image": "paints/hibou-comp-2.jpg",
+            "year": 2019,
+            "types": [1]
+        }
+    ]
+}

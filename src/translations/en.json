@@ -1,0 +1,343 @@
+{
+    "navbar": {
+        "language": "EN",
+        "home": "Home",
+        "about": "About",
+        "projects": "Projects",
+        "contact": "Contact",
+        "cv": "Digital CV"
+    },
+    "home": {
+        "welcome": {
+            "title": "Welcome!",
+            "subtitle": "You will find here some of my projects and some information about me.",
+            "button": "About me"
+        },
+        "projects": {
+            "title": "My projects"
+        },
+        "projectCard": {
+            "button": "See this project"
+        },
+        "prizes": {
+            "title": "My awards",
+            "learnMore": "Learn more"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "sorting": {
+            "title": "Sort by type",
+            "all": "All"
+        },
+        "projectCard": {
+            "button": "See this project"
+        }
+    },
+    "contact": {
+        "title": "Contact me",
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "message": "Message",
+            "button": "Send"
+        }
+    },
+    "cv": {
+        "personal": {
+            "age": "years old",
+            "license": "Driving license B",
+            "download": "Download my CV",
+            "languages": {
+                "title": "Languages",
+                "french": "French",
+                "english": "English",
+                "native": "Native language",
+                "intermediate": "Intermediate",
+                "voltaire": "Professional level spelling"
+            },
+            "interests": {
+                "title": "Interests",
+                "_total": 9,
+                "content": {
+                    "0": "Video games",
+                    "1": "Acoustics",
+                    "2": "Music",
+                    "3": "Carpentry",
+                    "4": "Drawing/Painting",
+                    "5": "Video/Photo",
+                    "6": "Climbing",
+                    "7": "Surfing",
+                    "8": "Hiking"
+                }
+            }
+        },
+        "main": {
+            "competences": {
+                "title": "Skills",
+                "softSkills": {
+                    "title": "Technical skills",
+                    "notation": {
+                        "1": "Vaguely familiar",
+                        "2": "Familiar",
+                        "3": "Comfortable",
+                        "4": "Very comfortable",
+                        "5": "Mastered"
+                    },
+                    "_total": 11,
+                    "content": {
+                        "0": {
+                            "name": "Office",
+                            "_level": 5
+                        },
+                        "1": {
+                            "name": "Unity",
+                            "_level": 4
+                        },
+                        "2": {
+                            "name": "Unreal Engine",
+                            "_level": 3
+                        },
+                        "3": {
+                            "name": "Blender",
+                            "_level": 3
+                        },
+                        "4": {
+                            "name": "Linux System",
+                            "_level": 4
+                        },
+                        "5": {
+                            "name": "Electronics",
+                            "_level": 4
+                        },
+                        "6": {
+                            "name": "Programmable card",
+                            "_level": 4
+                        },
+                        "7": {
+                            "name": "Terminal use",
+                            "_level": 3
+                        },
+                        "8": {
+                            "name": "Machine/Deep learning",
+                            "_level": 2
+                        },
+                        "9": {
+                            "name": "Project management",
+                            "_level": 3
+                        },
+                        "10": {
+                            "name": "Agile methodology",
+                            "_level": 3
+                        }
+                    }
+                },
+                "language": {
+                    "title": "Programming languages",
+                    "notation": {
+                        "1": "Hello World",
+                        "2": "Basic functions",
+                        "3": "Complex programming",
+                        "4": "Advanced programming",
+                        "5": "Preferred language"
+                    },
+                    "_total": 12,
+                    "content": {
+                        "0": {
+                            "name": "C++",
+                            "_level": 4
+                        },
+                        "1": {
+                            "name": "C#",
+                            "_level": 5
+                        },
+                        "2": {
+                            "name": "Python",
+                            "_level": 5
+                        },
+                        "3": {
+                            "name": "Java",
+                            "_level": 5
+                        },
+                        "4": {
+                            "name": "HTML/CSS",
+                            "_level": 4
+                        },
+                        "5": {
+                            "name": "Javascript",
+                            "_level": 4
+                        },
+                        "6": {
+                            "name": "SQL",
+                            "_level": 3
+                        },
+                        "7": {
+                            "name": "PHP",
+                            "_level": 3
+                        },
+                        "8": {
+                            "name": "Crystal",
+                            "_level": 3
+                        },
+                        "9": {
+                            "name": "C",
+                            "_level": 2
+                        },
+                        "10": {
+                            "name": "Lua",
+                            "_level": 2
+                        },
+                        "11": {
+                            "name": "Shakespeare",
+                            "_level": 1
+                        }
+                    }
+                }
+            },
+            "experiences": {
+                "title": "Experiences",
+                "_total": 4,
+                "content": {
+                    "3": {
+                        "name": "Discovery - Assistant information system management",
+                        "date": {
+                            "month": 5,
+                            "year": 2017
+                        },
+                        "time": {
+                            "duration": 7,
+                            "unit": "days"
+                        },
+                        "company": "Abisse",
+                        "location": "Nantes",
+                        "description": "3rd year discovery internship with an assistant director of information systems of an IT services company."
+                    },
+                    "2": {
+                        "name": "Discovery - Software development and data analysis",
+                        "date": {
+                            "month": 7,
+                            "year": 2021
+                        },
+                        "time": {
+                            "duration": 1,
+                            "unit": "month"
+                        },
+                        "company": "Fealinx",
+                        "location": "Paris",
+                        "description": "Development of algorithms for processing and analyzing biomedical data in Python."
+                    },
+                    "1": {
+                        "name": "Computer science private lessons",
+                        "date": {
+                            "month": 1,
+                            "year": 2021
+                        },
+                        "time": {
+                            "duration": 1.5,
+                            "unit": "years"
+                        },
+                        "company": "Private",
+                        "location": "Angers",
+                        "description": "Private lessons to learn how to use computer tools (word, chrome, etc) on Windows."
+                    },
+                    "0": {
+                        "name": "Internship - Research software ingeneer",
+                        "date": {
+                            "month": 9,
+                            "year": 2022
+                        },
+                        "time": {
+                            "duration": 3,
+                            "unit": "years"
+                        },
+                        "company": "Fealinx",
+                        "location": "Paris",
+                        "description": "Realization of Python software for the empowerment of Artificial Intelligence training in the medical field on the European RHU SHIVA project. I also developed a C# project management solution to automate certain tasks within the company."
+                    }
+                }
+            },
+            "formation": {
+                "title": "Formation",
+                "_total": 4,
+                "content": {
+                    "3": {
+                        "name": "Jean Mounes College",
+                        "date": {
+                            "start": 2013,
+                            "end": 2017
+                        },
+                        "location": "Pornic",
+                        "diploma": "Brevet",
+                        "mention": "Very good"
+                    },
+                    "2": {
+                        "name": "Livet High School",
+                        "date": {
+                            "start": 2017,
+                            "end": 2020
+                        },
+                        "location": "Nantes",
+                        "diploma": "STI2D Baccalaureate option SIN",
+                        "mention": "Good"
+                    },
+                    "1": {
+                        "name": "ESEO integrated preparatory class",
+                        "date": {
+                            "start": 2020,
+                            "end": 2022
+                        },
+                        "location": "Angers",
+                        "diploma": "",
+                        "mention": ""
+                    },
+                    "0": {
+                        "name": "ESEO engineering school",
+                        "date": {
+                            "start": 2022,
+                            "end": 2025
+                        },
+                        "location": "Angers",
+                        "diploma": "Engineer",
+                        "mention": "In progress"
+                    }
+                }
+            },
+            "associative": {
+                "title": "Associatif",
+                "_total": 3,
+                "content": {
+                    "2": {
+                        "name": "RobotESEO",
+                        "date": {
+                            "start": 2020,
+                            "end": 2022
+                        },
+                        "role": "Vice-president",
+                        "description": "Within my school (ESEO), I created a new project in a robotics club. The theme of the project is robot fighting. Our goal is to participate in the world fights \"BattleBots\" as well as to organize them within the school. To do this, we learned to set up and manage a project, to work in a group as well as to build a robot and look for sponsors.",
+                        "link": "https://www.roboteseo.fr/"
+                    },
+                    "1": {
+                        "name": "ESEO Lab",
+                        "date": {
+                            "start": 2021,
+                            "end": 2022
+                        },
+                        "role": "Vice-president",
+                        "description": "In the club's second year, I was vice-president. I organised a number of events (conferences, workshops, etc), carried out demonstration and research projects, managed the membership and helped run the club.",
+                        "link": "https://www.linkedin.com/company/80134017/"
+                    },
+                    "0": {
+                        "name": "ESEO Lab",
+                        "date": {
+                            "start": 2020,
+                            "end": 2025
+                        },
+                        "role": "Active member",
+                        "description": "In 2020, some friends and I set up an electronics and computing club. We completed several projects and organised events for members of the school and the public. We have also completed several projects that have been exhibited at trade fairs and conferences.",
+                        "link": "https://www.linkedin.com/company/80134017/"
+                    }
+                }
+            }
+        }
+    }
+}

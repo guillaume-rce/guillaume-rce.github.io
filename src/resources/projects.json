@@ -1,0 +1,314 @@
+{
+    "types": [
+        {
+            "id": 1,
+            "name": { "en": "Video game", "fr": "Jeu vidéo"},
+            "description": {
+                "fr": "Quand j'ai commencé le développement informatique, j'ai très rapidement été attiré par la création de jeux vidéos. J'ai commencé très simple avec Scratch lorsque j'étais au collège, puis j'ai appris à utiliser Unity3D et j'ai créé plusieurs petits jeux vidéos. Cela a donc toujours été une passion pour moi. J'ai également eu l'occasion de travailler sur des projets de jeux vidéos plus conséquents sur mon temps libre lors de mes études.",
+                "en": "When I started computer development, I was very quickly attracted by the creation of video games. I started very simply with Scratch when I was in high school, then I learned to use Unity3D and created several small video games. So it's always been a passion for me. I've also had the opportunity to work on more substantial video game projects in my spare time during my studies."
+            }
+        },
+        {
+            "id": 2,
+            "name": { "en": "Software", "fr": "Logiciel"},
+            "description": {
+                "fr": "J'ai eu l'occasion de travailler sur plusieurs projets de logiciels. Cela m'a permis de découvrir de nouvelles technologies et beaucoup de langages de programmation.",
+                "en": "I had the opportunity to work on several software projects. This allowed me to discover new technologies and many programming languages."
+            }
+        },
+        {
+            "id": 3,
+            "name": { "en": "Hardware", "fr": "Mécatronique"},
+            "description": {
+                "fr": "J'ai réalisé plusieurs projets de mécatronique en alliant mes compétences en informatique, en électronique et ma créativité. Mon grand-père ayant été un grand ébéniste, j'ai toujours été attiré par la création d'objets en bois et autres matières. J'ai notamment réalisé plusieurs objets avec l'impression 3D.",
+                "en": "I have carried out several mechatronics projects by combining my skills in computer science, electronics and my creativity. My grandfather having been a great carpenter, I have always been attracted by the creation of objects in wood."
+            }
+        },
+        {
+            "id": 4,
+            "name": { "en": "Tutored project", "fr": "Projet tutoré" },
+            "description": {
+                "fr": "Il s'agit de projets que j'ai réalisés dans le cadre de mes études. Ces projets sont parfois conçus en groupe et tutorés par un enseignant. Ils permettent de mettre en pratique les connaissances acquises en cours.",
+                "en": "These are projects that I carried out as part of my studies. These projects are sometimes carried out in groups and supervised by a teacher. They allow to put into practice the knowledge acquired in class."
+            }
+        },
+        {
+            "id": 5,
+            "name": { "en": "Events organization", "fr": "Organisation d'évènements" },
+            "description": {
+                "fr": "J'ai eu l'occasion d'organiser plusieurs évènements lors de mes études et au sein d'associations. J'ai apprécié ces expériences qui m'ont permis de développer mes contacts et mes compétences en communication.",
+                "en": "I had the opportunity to organize several events during my studies and within associations. I enjoyed these experiences that allowed me to develop my contacts and my communication skills."
+            }
+        }
+    ],
+    "projects": [
+        {
+            "id": 1,
+            "name": { "fr": "Le jeu Space Navigator", "en": "The game Space Navigator" },
+            "description": {
+                "fr": "Ce jeu a été le premier jeu ambitieux que j'ai réalisé jusqu'au bout. Je l'ai créé sur mon temps libre lors de ma quatrième année d'étude d'ingénieur. Il s'agit d'un jeu d'exploitation spatiale en 2D où le joueur évolu dans un univers généré procéduralement. Le joueur doit gérer ses ressources et faire face à des ennemis pour survivre. Il devra également réaliser des quêtes pour progresser dans l'histoire.",
+                "en": "This game was the first ambitious game I completed. I made it in my spare time during my fourth year of engineering studies. It is a 2D space exploitation game where the player evolves in a procedurally generated universe. The player must manage his resources and face enemies to survive. He will also have to complete quests to progress in the story."
+            },
+            "types": [1],
+            "technologies": ["Unity3D", "C#", "Procedural generation", "Game design", "Illustrator"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/SpaceNav.png"
+            },
+            "link": "https://guillaume-rce.github.io/SpaceNavigator/",
+            "homeCard": {
+                "title": { "fr": "Jeu d'exploration spatiale", "en": "Space exploration game" },
+                "content": {
+                    "type": "image",
+                    "src": "img/SpaceNav.png"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 2,
+            "name": { "fr": "Le jeu EmojiQuiz", "en": "The game EmojiQuiz" },
+            "description": {
+                "fr": "Tout est parti d'un défi lancé avec un ami, réaliser un jeu en une semaine (à raison de 7 heures par jour). J'ai donc créé ce petit jeu de quiz en une semaine. J'ai voulu concevoir un jeu coloré et fun. Cela aura été l'occasion, pour moi, de découvrir à nouveau Unity après une longue pause.",
+                "en": "It all started with a challenge launched with a friend, to make a game in a week (at the rate of 7 hours per day). So I made this little quiz game in a week. I wanted to make a colorful and fun game. It will have been an opportunity for me to discover Unity after a long break."
+            },
+            "types": [1],
+            "technologies": ["Unity3D", "C#", "Game design", "Mobile game", "UI/UX design"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/EmojiQuiz.png"
+            },
+            "homeCard": {
+                "title": { "fr": "Jeu de quiz", "en": "Quiz game" },
+                "content": {
+                    "type": "image",
+                    "src": "img/EmojiQuiz.png"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 3,
+            "name": { "fr": "Hexapode robot autonome", "en": "Autonomous hexapod robot" },
+            "description": {
+                "fr": "Lors de mes années à l'ESEO, j'ai co-créé le club d'éléctronique et informatique ESEO Lab. Dans ce cadre, j'ai réalisé un projet de robot hexapode autonome. Ce robot est capable de se déplacer de manière autonome dans l'établissement de l'ESEO. Il est capable de détecter les obstacles et de les éviter. Il est également capable d'effectuer des actions en fonction de la situation. Malheureusement, ce projet n'a pas pu être finalisé par manque de temps.",
+                "en": "During my years at ESEO, I co-created the ESEO Lab electronics and computer club. In this context, I carried out a project of an autonomous hexapod robot. This robot is able to move autonomously in the ESEO establishment. It is able to detect obstacles and avoid them. It is also able to perform actions according to the situation. Unfortunately, the project could not be completed due to lack of time."
+            },
+            "types": [3],
+            "technologies": ["Raspberry Pico", "Python", "Arduino", "C++", "Electronics", "3D printing", "Mechanics"],
+            "projectCardContent" : {
+                "type": "video",
+                "src": "video/robot.mp4"
+            },
+            "homeCard": {
+                "title": { "fr": "Robot hexapode autonome", "en": "Autonomous hexapod robot" },
+                "content": {
+                    "type": "video",
+                    "src": "video/robot.mp4"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 4,
+            "name": { "fr": "Neon Dystopia", "en": "Neon Dystopia" },
+            "description": {
+                "fr": "J'ai créé ce jeu vidéo en Java pendant mon temps libre lors de ma première année de classe préparatoire. Il s'agit d'un jeu de labyrinthe en 2D Top-Down. Le joueur doit trouver la sortie tout en résolvant des énigmes. J'ai notamment implémenté un système de lumière dynamique en Raycatching. J'ai réalisé Neon Dystopia pour m'entraîner à programmer des jeux vidéos en Java.",
+                "en": "I created this video game in Java in my spare time during my first year of preparatory class. It is a 2D Top-Down maze game. The player must find the exit of the maze while solving puzzles. I've implemented a dynamic lighting system using Raycatching. I made this game to practice programming video games in Java."
+            },
+            "types": [1],
+            "technologies": ["Java", "JavaFX", "Game design", "Algorithmic", "Raycatching"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/NeonDystopia.webp"
+            },
+            "homeCard": {
+                "title": { "fr": "Jeu de labyrinthe", "en": "Maze game" },
+                "content": {
+                    "type": "image",
+                    "src": "img/NeonDystopia.webp"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            },
+            "link": "https://guillaume-rce.github.io/neon-dystopia/"
+        },
+        {
+            "id": 5,
+            "name": { "fr": "Enceinte BRASS Alpha V2", "en": "BRASS Alpha V2 speaker" },
+            "description": {
+                "fr": "J'ai réalisé ce projet sur mon temps libre lors de ma première année de lycée. Il s'agit d'une enceinte portable design, avec une bonne qualité sonore et une forte puissance. J'ai conçu une première version de cette enceinte un été, puis j'ai décidé de la perfectionner l'été suivant.",
+                "en": "I carried out this project in my spare time during my first year of high school. It is a portable design speaker, with good sound quality and high power. I made a first version of this speaker one summer, then I decided to perfect it the following summer."
+            },
+            "types": [3],
+            "technologies": ["Arduino", "C++", "Woodworking", "Analog electronics", "3D printing"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/BRASS-Alpha-V2.webp"
+            },
+            "homeCard": {
+                "title": { "fr": "Enceinte portable", "en": "Portable speaker" },
+                "content": {
+                    "type": "image",
+                    "src": "img/BRASS-Alpha-V2.webp"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 6,
+            "name": { "fr": "Projet web en React", "en": "Web project in React" },
+            "description": {
+                "fr": "Lors de ma 4ème année d'étude d'ingénieur, nous avons étudié de développement web en React. J'ai donc décidé de réaliser un site web pour Oniverse, un studio fictif de jeux vidéos que j'aimerais créer un jour. Ce site web est un site vitrine pour présenter les différents jeux du studio et offre la possibilité de les acheter. C'est aussi un pseudo réseau social ayant des profils de joueurs et leurs récompenses.",
+                "en": "During my 4th year of engineering studies, we had a web development course in React. So I decided to create a website for Oniverse, a fictitious video game studio that I would like to create one day. This website is a showcase site to present the different games of the studio and offers the possibility to buy them. It is also a pseudo social network with player profiles and their rewards."
+            },
+            "types": [2, 4],
+            "technologies": ["React", "JavaScript", "HTML", "CSS", "UI/UX design", "Backend", "Database", "MySQL"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/prj-react.webp"
+            },
+            "homeCard": {
+                "title": { "fr": "Site web en React", "en": "Web project in React" },
+                "content": {
+                    "type": "image",
+                    "src": "img/prj-react.webp"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 7,
+            "name": { "fr": "L'application mobile FitMap", "en": "The mobile application FitMap" },
+            "description": {
+                "fr": "Lors de ma 4ème année d'étude d'ingénieur, nous avons eu un cours de développement Android. Avec un ami, nous avons réalisé une application recensant les différentes activités physiques dans le monde. L'application contenait aussi une partie sociale avec un système de discussion entre les utilisateurs et la possibilité de partager des média ainsi que des activités.",
+                "en": "During my 4th year of engineering studies, we had an Android development course. With a friend, we created an application listing the different physical activities in the world. The application also contained a social part with a discussion system between users and the possibility to share media as well as activities."
+            },
+            "types": [2, 4],
+            "technologies": ["Android", "Java", "UI/UX design", "Firebase", "API", "Live tracking", "OpenStreetMap"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/FitMap.webp"
+            },
+            "homeCard": {
+                "title": { "fr": "Application mobile", "en": "Mobile application" },
+                "content": {
+                    "type": "image",
+                    "src": "img/FitMap.webp"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            },
+            "link": "https://github.com/guillaume-rce/FitMap"
+        },
+        {
+            "id": 8,
+            "name": { "fr": "Combat de robots MakerFight", "en": "MakerFight robot combat" },
+            "description": {
+                "fr": "Lors de ma 2ème année de classe préparatoire, j'ai créé un projet au sein du club RobotESEO, le but est de concevoir un robot de combat pour participer à la compétition MakerFight. Avec notre équipe (composée de 6 personnes), nous avons réalisé en un an un robot bélier. Nous avons conclu des partenariats pour obtenir du matériel. En recupérant des pièces de seconde-mains, nous avons fabriqué un robot capable de se déplacer, de foncer sur l'adversaire et de retourner l'autre robot grâce à des pentes.",
+                "en": "During my 2nd year of preparatory class, I created a project within the RobotESEO club, the goal is to design a combat robot to participate in the MakerFight competition. With our team (composed of 6 people), we made a ram robot in one year. We concluded partnerships to obtain material and by recovering second-hand parts. We made a robot capable of moving, rushing the opponent and flipping the other robot thanks to slopes."
+            },
+            "types": [3],
+            "technologies": ["Arduino", "C++", "Electronics", "Mechanics", "3D printing", "Lazer cutting", "Modeling"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/battlebots.jpg"
+            },
+            "homeCard": {
+                "title": { "fr": "Combat de robots", "en": "Robot combat" },
+                "content": {
+                    "type": "image",
+                    "src": "img/battlebots.jpg"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            }
+        },
+        {
+            "id": 9,
+            "name": { "fr": "Resolver de billard", "en": "Billiard solver" },
+            "description": {
+                "fr": "Ce projet a été réalisé sur mon temps libre lors de mes études. Il s'agit d'un jeu de billard en Python. Le logiciel permet de résoudre des problèmes de billard à un instant donné. L'utilisateur peut choisir la position des différentes billes et le logiciel lui indique les différentes trajectoires possibles.",
+                "en": "This project was carried out in my spare time during my studies. It is a billiard game in Python. The software allows to solve billiard problems at a given time. The user can choose the position of the different balls and the software indicates the different possible trajectories."
+            },
+            "types": [2],
+            "technologies": ["Python", "Algorithmic", "Matplotlib"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/Billiard-Solver.webp"
+            },
+            "homeCard": {
+                "title": { "fr": "Resolver de billard", "en": "Billiard solver" },
+                "content": {
+                    "type": "image",
+                    "src": "img/Billiard-Solver.webp"
+                },
+                "style": {
+                    "backgroundContent": "#003d52",
+                    "backgroundType": "color",
+                    "textColor": "#fff"
+                }
+            },
+            "link": "https://github.com/guillaume-rce/Billiard"
+        },
+        {
+            "id": 10,
+            "name": { "fr": "Conférence sur le spatial", "en": "Space conference" },
+            "description": {
+                "fr": "Lors de ma première année d'ingénieur, au sein de l'association ESEO Lab, j'ai organisé une conférence sur le thème du spatial. J'ai invité un ingénieur du CNES et un ingénieur ayant travaillé à la NASA et à Caltech. Etant chef de projet, j'ai appris à organiser un évènement, à communiquer avec des professionnels et à gérer une équipe.",
+                "en": "During my first year of engineering, within the ESEO Lab association, I organized a conference on the theme of space. I invited an engineer from CNES and an engineer who worked at NASA and Caltech. As project manager, I learned to organize an event, communicate with professionals and manage a team."
+            },
+            "types": [5],
+            "technologies": ["Communication", "Event organization", "Team management"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/conference.jpg"
+            },
+            "link": "https://www.linkedin.com/posts/guillaume-rce_bonjour-%C3%A0-toutes-et-%C3%A0-tous-mercredi-dernier-activity-7005519654483873793-_WIa"
+        },
+        {
+            "id": 11,
+            "name": { "fr": "Générateur de musique par IA", "en": "AI music generator" },
+            "description": {
+                "fr": "Ce projet a été réalisé lors de mon stage à l'international en fin de première année de cycle ingénieur. J'ai conçu un générateur de musique et de chant par IA en utilisant Riffusion et SynthV. J'ai appris à développer des algorithmes d'IA et à les intégrer dans des logiciels existants.",
+                "en": "This project was carried out during my international internship at the end of the first year of the engineering cycle. I designed an AI music and singing generator using Riffusion and SynthV. I learned to develop AI algorithms and integrate them into existing software."
+            },
+            "types": [2],
+            "technologies": ["Python", "Lua", "AI", "riffusion", "SynthV"],
+            "projectCardContent": {
+                "type": "image",
+                "src": "img/riffusion.jpg"
+            },
+            "link":"https://github.com/guillaume-rce/Music_Generator_V1"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+.timeline {
+    position: fixed;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0px;
+    align-items: start;
+
+}
+
+.timelineItem {
+    cursor: pointer;
+}
+
+.timelineDot {
+    background-color: #ff5859 !important;
+    transition: all 0.3s;
+}
+
+.timelineDot.hovered {
+    background-color: #ff8080 !important;
+}
+
+.timelineDot.primary {
+    background-color: #b30000 !important;
+}
+
+.timelineConnector {
+    background-color: #ff5859 !important;
+}
+
+.timelineContent {
+    color: #ddd !important;
+    transition: all 0.3s;
+}
+
+.timelineContent.hovered {
+    color: #fff !important;
+}
+
+.timelineContent.primary {
+    color: #fff !important;
+}

@@ -1,0 +1,371 @@
+{
+    "navbar": {
+        "language": "FR",
+        "home": "Accueil",
+        "about": "A propos",
+        "projects": "Projets",
+        "contact": "Contact",
+        "cv": "CV numérique"
+    },
+    "home": {
+        "welcome": {
+            "title": "Bienvenue !",
+            "subtitle": "Vous trouverez ici quelques-uns de mes projets et quelques informations sur moi.",
+            "button": "A mon sujet"
+        },
+        "projects": {
+            "title": "Mes projets"
+        },
+        "projectCard": {
+            "button": "Voir le projet"
+        },
+        "prizes": {
+            "title": "Mes prix",
+            "learnMore": "En savoir plus"
+        }
+    },
+    "projects": {
+        "title": "Projets",
+        "sorting": {
+            "title": "Trier par type",
+            "all": "Tous"
+        },
+        "projectCard": {
+            "button": "Voir le projet"
+        }
+    },
+    "contact": {
+        "title": "Contactez-moi",
+        "form": {
+            "name": "Nom",
+            "email": "Email",
+            "message": "Message",
+            "button": "Envoyer"
+        }
+    },
+    "cv": {
+        "personal": {
+            "age": "ans",
+            "license": "Permis B",
+            "download": "Télécharger mon CV",
+            "languages": {
+                "title": "Langues",
+                "french": "Français",
+                "english": "Anglais",
+                "native": "Langue maternelle",
+                "intermediate": "Intermédiaire",
+                "voltaire": "Orthographe niveau professionnel"
+            },
+            "interests": {
+                "title": "Centres d'intérêt",
+                "_total": 9,
+                "content": {
+                    "0": "Jeux vidéos",
+                    "1": "Acoustique",
+                    "2": "Musique",
+                    "3": "Menuiserie",
+                    "4": "Dessin/Peinture",
+                    "5": "Vidéo/Photo",
+                    "6": "Escalade",
+                    "7": "Surf",
+                    "8": "Randonnée"
+                }
+            }
+        },
+        "main": {
+            "competences": {
+                "title": "Compétences",
+                "softSkills": {
+                    "title": "Compétences techniques",
+                    "notation": {
+                        "1": "Vaguement familier",
+                        "2": "Familier",
+                        "3": "A l'aise",
+                        "4": "Très à l'aise",
+                        "5": "Maîtrisé"
+                    },
+                    "_total": 11,
+                    "content": {
+                        "0": {
+                            "name": "Office",
+                            "_level": 5
+                        },
+                        "1": {
+                            "name": "Unity",
+                            "_level": 4
+                        },
+                        "2": {
+                            "name": "Unreal Engine",
+                            "_level": 3
+                        },
+                        "3": {
+                            "name": "Blender",
+                            "_level": 3
+                        },
+                        "4": {
+                            "name": "System Linux",
+                            "_level": 4
+                        },
+                        "5": {
+                            "name": "Electronique",
+                            "_level": 4
+                        },
+                        "6": {
+                            "name": "Carte programmable",
+                            "_level": 4
+                        },
+                        "7": {
+                            "name": "Utilisation de terminal",
+                            "_level": 3
+                        },
+                        "8": {
+                            "name": "Machine/Deep learning",
+                            "_level": 2
+                        },
+                        "9": {
+                            "name": "Gestion de projets",
+                            "_level": 3
+                        },
+                        "10": {
+                            "name": "Méthodologie Agile",
+                            "_level": 3
+                        }
+                    }
+                },
+                "language": {
+                    "title": "Langages de programmation",
+                    "notation": {
+                        "1": "Hello World",
+                        "2": "Fonctions basiques",
+                        "3": "Programmation complexe",
+                        "4": "Programmation avancée",
+                        "5": "Langage de prédilection"
+                    },
+                    "_total": 12,
+                    "content": {
+                        "0": {
+                            "name": "C++",
+                            "_level": 4
+                        },
+                        "1": {
+                            "name": "C#",
+                            "_level": 5
+                        },
+                        "2": {
+                            "name": "Python",
+                            "_level": 5
+                        },
+                        "3": {
+                            "name": "Java",
+                            "_level": 5
+                        },
+                        "4": {
+                            "name": "HTML/CSS",
+                            "_level": 4
+                        },
+                        "5": {
+                            "name": "Javascript",
+                            "_level": 4
+                        },
+                        "6": {
+                            "name": "SQL",
+                            "_level": 3
+                        },
+                        "7": {
+                            "name": "PHP",
+                            "_level": 3
+                        },
+                        "8": {
+                            "name": "Crystal",
+                            "_level": 3
+                        },
+                        "9": {
+                            "name": "C",
+                            "_level": 2
+                        },
+                        "10": {
+                            "name": "Lua",
+                            "_level": 2
+                        },
+                        "11": {
+                            "name": "Shakespeare",
+                            "_level": 1
+                        }
+                    }
+                }
+            },
+            "experiences": {
+                "title": "Expériences",
+                "_total": 6,
+                "content": {
+                    "5": {
+                        "name": "Découverte - Assistant direction système d'information",
+                        "date": {
+                            "month": 5,
+                            "year": 2017
+                        },
+                        "time": {
+                            "duration": 7,
+                            "unit": "jours"
+                        },
+                        "company": "Abisse",
+                        "location": "Nantes",
+                        "description": "Stage de découverte de 3ème auprès d'un assistant directeur système d'information d'une société de services informatiques."
+                    },
+                    "4": {
+                        "name": "Découverte - Développement informatique et analyse de données",
+                        "date": {
+                            "month": 7,
+                            "year": 2021
+                        },
+                        "time": {
+                            "duration": 1,
+                            "unit": "mois"
+                        },
+                        "company": "Fealinx",
+                        "location": "Paris",
+                        "description": "Réalisation d'algorithmes de traitements et d'analyses de données biomédicales en Python."
+                    },
+                    "3": {
+                        "name": "Cours particuliers d'informatique",
+                        "date": {
+                            "month": 1,
+                            "year": 2021
+                        },
+                        "time": {
+                            "duration": 1.5,
+                            "unit": "ans"
+                        },
+                        "company": "Particulier",
+                        "location": "Angers",
+                        "description": "Cours particuliers pour apprendre à utiliser les outils informatiques (word, chrome, etc) sur Windows."
+                    },
+                    "2": {
+                        "name": "Membre du conseil local du numérique",
+                        "date": {
+                            "month": 10,
+                            "year": 2022
+                        },
+                        "time": {
+                            "duration": 1,
+                            "unit": "an"
+                        },
+                        "company": "Angers Loire Métropole",
+                        "location": "Angers",
+                        "description": "Membre du conseil local du numérique de la ville d'Angers. Participation à la réflexion sur les enjeux du numérique pour la ville et les habitants."
+                    },
+                    "1": {
+                        "name": "Stage international - Recherche en Intelligence Artificielle",
+                        "date": {
+                            "month": 7,
+                            "year": 2023
+                        },
+                        "time": {
+                            "duration": 3,
+                            "unit": "mois"
+                        },
+                        "company": "Maynooth University",
+                        "location": "Maynooth, Irlande",
+                        "description": "Developpement d'un modele d'intelligence artificielle pour la génération de musique et de champs."
+                    },
+                    "0": {
+                        "name": "Alternance - Ingénieur de recherche en informatique",
+                        "date": {
+                            "month": 9,
+                            "year": 2022
+                        },
+                        "time": {
+                            "duration": 3,
+                            "unit": "ans"
+                        },
+                        "company": "Fealinx",
+                        "location": "Paris",
+                        "description": "Développement de logiciels Python pour l'automatisation des entraînements d'Intelligence Artificielle dans le domaine médical sur le projet européen RHU SHIVA. Réalisation d'une solution C# d'aide à la gestion de projet pour automatiser certaines tâches en entreprise."
+                    }
+                }
+            },
+            "formation": {
+                "title": "Formation",
+                "_total": 4,
+                "content": {
+                    "3": {
+                        "name": "Collège Jean Mounes ",
+                        "date": {
+                            "start": 2013,
+                            "end": 2017
+                        },
+                        "location": "Pornic",
+                        "diploma": "Brevet",
+                        "mention": "Très bien"
+                    },
+                    "2": {
+                        "name": "Lycée Livet",
+                        "date": {
+                            "start": 2017,
+                            "end": 2020
+                        },
+                        "location": "Nantes",
+                        "diploma": "Baccalauréat STI2D option SIN",
+                        "mention": "Bien"
+                    },
+                    "1": {
+                        "name": "Prépa intégrée ESEO",
+                        "date": {
+                            "start": 2020,
+                            "end": 2022
+                        },
+                        "location": "Angers",
+                        "diploma": "",
+                        "mention": ""
+                    },
+                    "0": {
+                        "name": "Ecole d'ingénieur ESEO",
+                        "date": {
+                            "start": 2022,
+                            "end": 2025
+                        },
+                        "location": "Angers",
+                        "diploma": "Ingénieur",
+                        "mention": "En cours"
+                    }
+                }
+            },
+            "associative": {
+                "title": "Associatif",
+                "_total": 3,
+                "content": {
+                    "2": {
+                        "name": "RobotESEO",
+                        "date": {
+                            "start": 2020,
+                            "end": 2022
+                        },
+                        "role": "Vice-président",
+                        "description": "Au sein de mon école, j'ai créé un nouveau projet dans un club de robotique. Le thème du projet est le combat de robots. Notre but est de participer aux combats mondiaux « BattleBots » ainsi que d'en organiser au sein de l'école. Pour cela, nous avons appris à monter et gérer un projet, à travailler en groupe ainsi qu'à construire un robot et rechercher des sponsors.",
+                        "link": "https://www.roboteseo.fr/"
+                    },
+                    "1": {
+                        "name": "ESEO Lab",
+                        "date": {
+                            "start": 2021,
+                            "end": 2022
+                        },
+                        "role": "Vice-président",
+                        "description": "Lors de la deuxième année du club, j'ai été vice-président. J'ai donc organisé plusieurs événements (conférences, ateliers, etc), j'ai réalisé des projets de démonstration et de recherche, j'ai géré les membres et j'ai participé à la gestion du club.",
+                        "link": "https://www.linkedin.com/company/80134017/"
+                    },
+                    "0": {
+                        "name": "ESEO Lab",
+                        "date": {
+                            "start": 2020,
+                            "end": 2025
+                        },
+                        "role": "Membre actif",
+                        "description": "En 2020, avec des amis, nous avons créé un club d'électronique et d'informatique. Nous avons réalisé plusieurs projets et nous avons organisé des événements pour les membres de l'école et le public. Nous avons également réalisé plusieurs projets qui ont été exposés lors de salons et de conférences.",
+                        "link": "https://www.linkedin.com/company/80134017/"
+                    }
+                }
+            }
+        }
+    }
+}

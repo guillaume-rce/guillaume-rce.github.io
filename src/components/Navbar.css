@@ -1,0 +1,30 @@
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1d21;
+    padding: 4px 16px;
+}
+
+.navbar-button {
+    transition: all 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: #0000 !important;
+    color: #fff9;
+}
+
+.language-button {
+    cursor: pointer;
+    margin-right: 16px;
+    color: white !important;
+    background-color: #1f3a46 !important;
+    border-radius: 8px !important;
+    padding: 8px 16px !important;
+    transition: background-color 0.3s ease !important;
+}
+
+.language-button:hover {
+    background-color: #2a4b59 !important;
+}
