@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5bf1c33b.css",
-    "main.js": "/static/js/main.06e91791.js",
+    "main.js": "/static/js/main.aa16c29d.js",
     "static/js/453.bd59ac40.chunk.js": "/static/js/453.bd59ac40.chunk.js",
     "static/media/robot.mp4": "/static/media/robot.cc63f29cfc2fbc48d15c.mp4",
     "static/media/hibou.jpg": "/static/media/hibou.d894ea737750b5719a60.jpg",
@@ -17,6 +17,7 @@
     "static/media/conference.jpg": "/static/media/conference.0bde6fd4be7ad021f4a9.jpg",
     "static/media/Conference.webp": "/static/media/Conference.cda034194015cba28323.webp",
     "static/media/EmojiQuiz.png": "/static/media/EmojiQuiz.7faa396c59cb96e26c63.png",
+    "static/media/riffusion.jpg": "/static/media/riffusion.e30f83028dc70de0fc2b.jpg",
     "static/media/liteManager.webp": "/static/media/liteManager.c19ebe931a5b64503779.webp",
     "static/media/Drone.webp": "/static/media/Drone.0dacc23c8488eb0df5f6.webp",
     "static/media/BRASS-Alpha-V2.webp": "/static/media/BRASS-Alpha-V2.66e87a3db46171228dde.webp",
@@ -30,11 +31,11 @@
     "index.html": "/index.html",
     "static/media/Star.svg": "/static/media/Star.c4de7332d4085b727ed6.svg",
     "main.5bf1c33b.css.map": "/static/css/main.5bf1c33b.css.map",
-    "main.06e91791.js.map": "/static/js/main.06e91791.js.map",
+    "main.aa16c29d.js.map": "/static/js/main.aa16c29d.js.map",
     "453.bd59ac40.chunk.js.map": "/static/js/453.bd59ac40.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5bf1c33b.css",
-    "static/js/main.06e91791.js"
+    "static/js/main.aa16c29d.js"
   ]
 }
