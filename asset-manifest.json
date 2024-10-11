@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.5bf1c33b.css",
-    "main.js": "/static/js/main.8241c4c4.js",
+    "main.css": "/static/css/main.2dafc5f4.css",
+    "main.js": "/static/js/main.c5ba3d05.js",
     "static/js/453.bd59ac40.chunk.js": "/static/js/453.bd59ac40.chunk.js",
     "static/media/robot.mp4": "/static/media/robot.cc63f29cfc2fbc48d15c.mp4",
     "static/media/hibou.jpg": "/static/media/hibou.d894ea737750b5719a60.jpg",
     "static/media/hibou-comp.jpg": "/static/media/hibou-comp.41fb0908af4870237501.jpg",
+    "static/media/photo_cv_square.JPG": "/static/media/photo_cv_square.c2a33c4c7abdf3061d8c.JPG",
     "static/media/battlebots.jpg": "/static/media/battlebots.db2f4927bac6a50c338a.jpg",
     "static/media/hibou-comp-2.jpg": "/static/media/hibou-comp-2.27dbe9984980ca6b9328.jpg",
     "static/media/planette.ai": "/static/media/planette.e5e1867c542a5c4b43a4.ai",
     "static/media/SpaceNav.png": "/static/media/SpaceNav.3048e0b7b542b0be62d8.png",
     "static/media/FitMap.webp": "/static/media/FitMap.440145140d7c86a62987.webp",
     "static/media/NeonDystopia.webp": "/static/media/NeonDystopia.f1e57142b760d96a3b12.webp",
+    "static/media/CV-Guillaume-ROCHE.pdf": "/static/media/CV-Guillaume-ROCHE.858ab30a63191e8175e8.pdf",
     "static/media/24h3.jpg": "/static/media/24h3.80e122c5e9732afa3335.jpg",
     "static/media/24h2.jpg": "/static/media/24h2.127cd969896354a64d55.jpg",
     "static/media/24h1.jpg": "/static/media/24h1.7a2fc98ad6f3eacb35f5.jpg",
-    "static/media/profile.jpeg": "/static/media/profile.b7b5ece4e8bf5c80f729.jpeg",
     "static/media/BRASS Omni.webp": "/static/media/BRASS Omni.ed1f723e953f8aae89eb.webp",
     "static/media/conference.jpg": "/static/media/conference.0bde6fd4be7ad021f4a9.jpg",
     "static/media/Conference.webp": "/static/media/Conference.cda034194015cba28323.webp",
@@ -33,12 +34,12 @@
     "static/media/Planete.svg": "/static/media/Planete.0a9cc6ed96442370b8e1.svg",
     "index.html": "/index.html",
     "static/media/Star.svg": "/static/media/Star.c4de7332d4085b727ed6.svg",
-    "main.5bf1c33b.css.map": "/static/css/main.5bf1c33b.css.map",
-    "main.8241c4c4.js.map": "/static/js/main.8241c4c4.js.map",
+    "main.2dafc5f4.css.map": "/static/css/main.2dafc5f4.css.map",
+    "main.c5ba3d05.js.map": "/static/js/main.c5ba3d05.js.map",
     "453.bd59ac40.chunk.js.map": "/static/js/453.bd59ac40.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5bf1c33b.css",
-    "static/js/main.8241c4c4.js"
+    "static/css/main.2dafc5f4.css",
+    "static/js/main.c5ba3d05.js"
   ]
 }
