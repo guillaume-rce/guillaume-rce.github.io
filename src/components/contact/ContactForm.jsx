@@ -114,10 +114,14 @@ const ContactForm = () => {
                     direction="column"
                     className="contact-form-container"
                     sx={{
+                        // Sur mobile, le formulaire devient un bloc posé sur la photo (qui reste visible autour)
                         width: {
-                            sm: '100%',
+                            xs: 'calc(100% - 32px)',
                             md: '50%'
                         },
+                        m: { xs: 2, md: 0 },
+                        alignSelf: { xs: 'center', md: 'stretch' },
+                        borderRadius: { xs: 2, md: 0 },
                         position: 'relative',
                         left: {
                             sm: '0',
@@ -130,9 +134,9 @@ const ContactForm = () => {
                         onSubmit={sendEmail}
                         className="contact-form"
                     >
-                        <Stack direction="row" spacing={2} width="100%">
-                            <Typography variant="h3" align="center" gutterBottom color="white"
-                                sx={{
+                        <Stack direction="row" spacing={2} sx={{ width: "100%" }}>
+                            <Typography variant="h3" align="center" gutterBottom
+                                sx={{ color: "white",
                                     fontSize: {
                                         xs: '2rem',
                                         sm: '3rem'
@@ -141,7 +145,7 @@ const ContactForm = () => {
                             >
                                 {t('contact.title')}
                             </Typography>
-                            <Stack direction="row" spacing={2} className="social-icons" color={'white'}>
+                            <Stack direction="row" spacing={2} className="social-icons" sx={{ color: 'white' }}>
                                 <CustomIcon
                                     IconComponent={GitHubIcon}
                                     link="https://github.com/guillaume-rce"
@@ -190,6 +194,7 @@ const ContactForm = () => {
                         />
                         <Button type="submit" variant="contained" className='submit-button'
                             sx={{
+                                mt: 2,
                                 width: {
                                     xs: "100%",
                                     sm: "200px"

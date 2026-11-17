@@ -38,7 +38,7 @@ const ProjectsComponent = ({ projects, selectedType, projectId }) => {
 
     return (
         <Stack direction="column" spacing={2}>
-            <Typography variant="h4" align="left" gutterBottom color={'white'}>
+            <Typography variant="h4" align="left" gutterBottom sx={{ color: 'white' }}>
                 {selectedType ? selectedType.name[lang] : t('home.projects.title')}
             </Typography>
             <Stack direction="column" spacing={3} ref={projectsRef}>

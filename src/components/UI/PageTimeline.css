@@ -3,41 +3,62 @@
     z-index: 10;
     top: 50%;
     transform: translateY(-50%);
-    right: 0px;
-    align-items: start;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+}
 
+/* Sous 1200px les marges latérales sont trop étroites : la timeline masquerait le contenu */
+@media (max-width: 1199.95px) {
+    .timeline {
+        display: none !important;
+    }
 }
 
 .timelineItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    background: none;
+    border: 0;
     cursor: pointer;
+    font: inherit;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    color: #7f979d;
+    transition: color 0.3s;
 }
 
-.timelineDot {
-    background-color: #ff5859 !important;
-    transition: all 0.3s;
+.timelineTick {
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #3b5660;
+    transition: width 0.3s, background-color 0.3s;
 }
 
-.timelineDot.hovered {
-    background-color: #ff8080 !important;
+.timelineItem:hover {
+    color: #fff;
 }
 
-.timelineDot.primary {
-    background-color: #b30000 !important;
+.timelineItem:hover .timelineTick {
+    width: 22px;
+    background-color: #7f979d;
 }
 
-.timelineConnector {
-    background-color: #ff5859 !important;
+.timelineItem.active {
+    color: #fff;
 }
 
-.timelineContent {
-    color: #ddd !important;
-    transition: all 0.3s;
+.timelineItem.active .timelineTick {
+    width: 32px;
+    background-color: #ff5859;
 }
 
-.timelineContent.hovered {
-    color: #fff !important;
-}
-
-.timelineContent.primary {
-    color: #fff !important;
+.timelineItem:focus-visible {
+    outline: 1px solid #ff5859;
+    outline-offset: 2px;
 }

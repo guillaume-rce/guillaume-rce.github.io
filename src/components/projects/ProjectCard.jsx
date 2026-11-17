@@ -13,7 +13,6 @@ import {
     Fade
 } from '@mui/material';
 import i18n from "../../translations/i18n";
-import { useHistory } from "react-router-dom";
 import { useProjects } from "../../context/ProjectsContext";
 import './ProjectCard.css';
 
@@ -21,7 +20,6 @@ const resources = import.meta.glob('/src/resources/**/*', { eager: true, import:
 
 const ProjectCard = ({ project }) => {
     const lang = i18n.language;
-    const history = useHistory();
     const { getType } = useProjects();
 
     const title = project.name[lang];
@@ -77,18 +75,18 @@ const ProjectCard = ({ project }) => {
             >
                 <CardContent sx={{ flex: '1 0 auto' }}>
                     <Stack direction="column" spacing={1}>
-                        <Typography variant="h5" component="div" color={'white'} title={title}>
+                        <Typography variant="h5" component="div" title={title} sx={{ color: 'white' }}>
                             {title}
                         </Typography>
-                        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+                        <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
                             {types.map((type, index) => (
                                 <Tooltip
                                     key={index}
                                     title={type.description[lang]}
                                     placement="left"
                                     arrow
-                                    TransitionComponent={Fade}
-                                    TransitionProps={{ timeout: 600 }}
+                                    slots={{ transition: Fade }}
+                                    slotProps={{ transition: { timeout: 600 } }}
                                 >
                                     <Chip
                                         key={index}
@@ -101,12 +99,12 @@ const ProjectCard = ({ project }) => {
                                 </Tooltip>
                             ))}
                         </Stack>
-                        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+                        <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
                             {technologies.map((tech, index) => (
                                 <Chip key={index} label={tech} variant="outlined" style={{ color: '#fff' }} size="small" />
                             ))}
                         </Stack>
-                        <Typography variant="body2" color={'white'} align="justify">
+                        <Typography variant="body2" sx={{ color: '#c9d6d9', lineHeight: 1.7, pt: 0.5 }}>
                             {description}
                         </Typography>
                     </Stack>

@@ -1,11 +1,11 @@
 .contact-form-background {
-    height: 100%;
+    flex: 1;
+    display: flex;
     width: 100%;
     overflow: hidden;
 }
 
 .contact-form-container {
-    height: 100%;
     background-color: #003d52;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
     padding: 40px;
@@ -13,7 +13,7 @@
 }
 
 .contact-form {
-    height: 100%;
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -40,4 +40,10 @@
 .submit-button:hover {
     background-color: #ff5859 !important;
     color: #003d52 !important;
+}
+
+@media (max-width: 600px) {
+    .contact-form-container {
+        padding: 24px 16px;
+    }
 }

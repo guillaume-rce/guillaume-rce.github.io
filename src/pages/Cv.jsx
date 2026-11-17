@@ -6,6 +6,7 @@ import { Divider, Stack } from "@mui/material";
 import CvPerso from "../components/cv/CvPerso";
 import CvMain from "../components/cv/CvMain";
 import PageTimeline from "../components/UI/PageTimeline";
+import { sectionPx } from "../components/UI/layout";
 
 const Cv = () => {
   return (
@@ -36,10 +37,11 @@ const Cv = () => {
           ]}
           document={document}
         />
-        <Stack direction="row" spacing={2} sx={{ padding: "40px 180px" }}>
+        <Stack direction={{ xs: "column", md: "row" }} spacing={{ xs: 5, md: 2 }} useFlexGap
+            sx={{ py: { xs: 3, md: 5 }, px: sectionPx }}>
             <CvPerso />
-            <Divider orientation="vertical" flexItem 
-                sx={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }} />
+            <Divider orientation="vertical" flexItem
+                sx={{ backgroundColor: 'rgba(255, 255, 255, 0.2)', display: { xs: 'none', md: 'block' } }} />
             <CvMain />
         </Stack>
     </div>

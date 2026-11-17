@@ -4,6 +4,7 @@ import { motion, useMotionValue, useTransform, animate } from 'framer-motion';
 
 const StyledCard = styled(Card)({
     backgroundColor: '#003d52',
+    height: '100%',
 });
 
 const StyledBox = styled(Box)({
@@ -52,7 +53,8 @@ const LanguageCard = (props) => {
             <CardActionArea
                 href={props.link}
                 target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer"
+                sx={{ height: '100%' }}>
                 <StyledBox>
                     <StyledCardContent>
                         <StyledText variant="h6" component="div" style={{ fontWeight: 'bold', fontSize: '1.3em' }}>
@@ -64,7 +66,8 @@ const LanguageCard = (props) => {
                     </StyledCardContent>
                     <StyledCertBox>
                         <img src={props.certLogo}
-                            alt="Logo" style={{ width: "30px" }}/>
+                            alt="Logo" style={{ width: "30px" }}
+                            onError={(e) => { e.currentTarget.style.display = 'none'; }}/>
                         <Stack direction="column" spacing={1}>
                             <motion.div style={{ fontSize: "1.5em", color: "#fff" }}>{rounded}</motion.div>
                         </Stack>

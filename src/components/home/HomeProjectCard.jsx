@@ -1,13 +1,13 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import i18n from "../../translations/i18n";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const resources = import.meta.glob('/src/resources/**/*', { eager: true, import: 'default' });
 
 const HomeProjectCard = ({ project }) => {
     const lang = i18n.language;
-    const history = useHistory();
+    const navigate = useNavigate();
     const { type, src } = project.content;
     const defaultImage = 'https://images.unsplash.com/photo-1557683316-973673baf926';
 
@@ -34,7 +34,12 @@ const HomeProjectCard = ({ project }) => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}>
 
-            <Card style={style}>
+            <Card style={style}
+                sx={{
+                    border: '1px solid transparent',
+                    transition: 'border-color 0.3s',
+                    '&:hover': { borderColor: '#ff585980' },
+                }}>
                 <CardMedia
                     height="300px"
                     width="300px"
@@ -55,14 +60,14 @@ const HomeProjectCard = ({ project }) => {
                     }
                 />
                 <CardContent>
-                    <Typography variant="h5" component="div" color={textColor} title={project.title[lang]}
-                        style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} >
+                    <Typography variant="h5" component="div" title={project.title[lang]}
+                        style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }} sx={{ color: textColor }} >
                         {project.title[lang]}
                     </Typography>
                 </CardContent>
                 <CardActions>
                     <Button size="small" color="primary" onClick={
-                            () => history.push(`/projects/${project.id}`)
+                            () => navigate(`/projects/${project.id}`)
                         }
                         sx={{
                             border: '1px solid #ff5859',

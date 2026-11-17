@@ -8,6 +8,7 @@ import Sorting from "../components/projects/Sorting";
 
 import "./Share.css";
 import { useParams } from "react-router-dom";
+import { sectionPx } from "../components/UI/layout";
 
 const Projects = () => {
     const { id } = useParams();
@@ -37,7 +38,8 @@ const Projects = () => {
                 direction="column" 
                 spacing={4} 
                 sx={{
-                    padding: { xs: '16px', sm: '24px', md: '40px 180px' },
+                    px: sectionPx,
+                    py: { xs: 3, md: 5 },
                     alignItems: { xs: 'center', md: 'stretch' }
                 }}
             >

@@ -9,10 +9,8 @@ function Contact() {
     return (
         <div className="background">
             <Navbar />
-            <Stack direction="column" style={{
-                // Prendre toute la hauteur de la page restante
-                height: 'calc(100vh - 72px)',
-            }} >
+            {/* Prend toute la hauteur restante sous la navbar, et grandit si le formulaire dépasse */}
+            <Stack direction="column" sx={{ flex: 1 }}>
                 <ContactForm />
             </Stack>
         </div>

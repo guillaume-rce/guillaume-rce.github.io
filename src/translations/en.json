@@ -53,180 +53,164 @@
                 "french": "French",
                 "english": "English",
                 "native": "Native language",
-                "intermediate": "Intermediate",
-                "voltaire": "Professional level spelling"
+                "voltaire": "Professional level spelling",
+                "professional": "Professional"
             },
             "interests": {
                 "title": "Interests",
-                "_total": 9,
+                "_total": 11,
                 "content": {
-                    "0": "Video games",
-                    "1": "Acoustics",
-                    "2": "Music",
-                    "3": "Carpentry",
-                    "4": "Drawing/Painting",
-                    "5": "Video/Photo",
-                    "6": "Climbing",
-                    "7": "Surfing",
-                    "8": "Hiking"
+                    "0": "Long-distance hiking",
+                    "1": "Climbing",
+                    "2": "Surfing",
+                    "3": "Nature",
+                    "4": "Photography",
+                    "5": "Drawing",
+                    "6": "Video",
+                    "7": "Acoustics",
+                    "8": "Music",
+                    "9": "Video games / Game dev",
+                    "10": "Carpentry"
                 }
             }
         },
         "main": {
             "competences": {
                 "title": "Skills",
-                "softSkills": {
-                    "title": "Technical skills",
-                    "notation": {
-                        "1": "Vaguely familiar",
-                        "2": "Familiar",
-                        "3": "Comfortable",
-                        "4": "Very comfortable",
-                        "5": "Mastered"
+                "_total": 4,
+                "content": {
+                    "0": {
+                        "name": "Languages",
+                        "items": [
+                            "C#",
+                            "C++",
+                            "Python",
+                            "Java",
+                            "TypeScript",
+                            "JavaScript",
+                            "Rust",
+                            "C",
+                            "SQL",
+                            "HTML/CSS"
+                        ]
                     },
-                    "_total": 11,
-                    "content": {
-                        "0": {
-                            "name": "Office",
-                            "_level": 5
-                        },
-                        "1": {
-                            "name": "Unity",
-                            "_level": 4
-                        },
-                        "2": {
-                            "name": "Unreal Engine",
-                            "_level": 3
-                        },
-                        "3": {
-                            "name": "Blender",
-                            "_level": 3
-                        },
-                        "4": {
-                            "name": "Linux System",
-                            "_level": 4
-                        },
-                        "5": {
-                            "name": "Electronics",
-                            "_level": 4
-                        },
-                        "6": {
-                            "name": "Programmable card",
-                            "_level": 4
-                        },
-                        "7": {
-                            "name": "Terminal use",
-                            "_level": 3
-                        },
-                        "8": {
-                            "name": "Machine/Deep learning",
-                            "_level": 2
-                        },
-                        "9": {
-                            "name": "Project management",
-                            "_level": 3
-                        },
-                        "10": {
-                            "name": "Agile methodology",
-                            "_level": 3
-                        }
-                    }
-                },
-                "language": {
-                    "title": "Programming languages",
-                    "notation": {
-                        "1": "Hello World",
-                        "2": "Basic functions",
-                        "3": "Complex programming",
-                        "4": "Advanced programming",
-                        "5": "Preferred language"
+                    "1": {
+                        "name": "Frameworks & Tools",
+                        "items": [
+                            "Unity",
+                            "React",
+                            "WordPress",
+                            "Git",
+                            "Docker",
+                            "Grafana",
+                            "Linux",
+                            "Kubernetes",
+                            "SSH",
+                            "VPN",
+                            "Automation scripts",
+                            "Servers"
+                        ]
                     },
-                    "_total": 12,
-                    "content": {
-                        "0": {
-                            "name": "C++",
-                            "_level": 4
-                        },
-                        "1": {
-                            "name": "C#",
-                            "_level": 5
-                        },
-                        "2": {
-                            "name": "Python",
-                            "_level": 5
-                        },
-                        "3": {
-                            "name": "Java",
-                            "_level": 5
-                        },
-                        "4": {
-                            "name": "HTML/CSS",
-                            "_level": 4
-                        },
-                        "5": {
-                            "name": "Javascript",
-                            "_level": 4
-                        },
-                        "6": {
-                            "name": "SQL",
-                            "_level": 3
-                        },
-                        "7": {
-                            "name": "PHP",
-                            "_level": 3
-                        },
-                        "8": {
-                            "name": "Crystal",
-                            "_level": 3
-                        },
-                        "9": {
-                            "name": "C",
-                            "_level": 2
-                        },
-                        "10": {
-                            "name": "Lua",
-                            "_level": 2
-                        },
-                        "11": {
-                            "name": "Shakespeare",
-                            "_level": 1
-                        }
+                    "2": {
+                        "name": "Data & AI",
+                        "items": [
+                            "Python",
+                            "Matlab",
+                            "MQTT",
+                            "Machine/Deep Learning",
+                            "Simulation"
+                        ]
+                    },
+                    "3": {
+                        "name": "Electronics & Embedded",
+                        "items": [
+                            "Analog and digital electronics",
+                            "Altium",
+                            "Oscilloscope",
+                            "I2C bus",
+                            "SPI",
+                            "UART",
+                            "Arduino",
+                            "Raspberry Pi",
+                            "Embedded Linux",
+                            "STMicroelectronics microcontrollers"
+                        ]
                     }
                 }
             },
             "experiences": {
                 "title": "Experiences",
-                "_total": 4,
+                "_total": 8,
                 "content": {
-                    "3": {
-                        "name": "Discovery - Assistant information system management",
+                    "0": {
+                        "name": "R&D Engineer (permanent contract)",
                         "date": {
-                            "month": 5,
-                            "year": 2017
+                            "month": 9,
+                            "year": 2025
                         },
                         "time": {
-                            "duration": 7,
-                            "unit": "days"
+                            "unit": "Ongoing"
                         },
-                        "company": "Abisse",
-                        "location": "Nantes",
-                        "description": "3rd year discovery internship with an assistant director of information systems of an IT services company."
+                        "company": "DV Group (formerly Fealinx)",
+                        "location": "Paris",
+                        "description": "Time-tracking tool integrated into the ERP: API integration, authentication, deployment, documentation. B2B client projects: requirements analysis, project follow-up. Proposed the redesign of the internal BI (React / TypeScript) and conducted technical research in pairs. Set up Linux and Kubernetes infrastructures to deploy applications."
+                    },
+                    "1": {
+                        "name": "Founder of an independent video game studio",
+                        "date": {
+                            "month": 6,
+                            "year": 2025
+                        },
+                        "time": {
+                            "unit": "Ongoing"
+                        },
+                        "company": "Western Light Studio",
+                        "location": "Sole proprietorship",
+                        "description": "Game development with Unity / C#: Neon Dystopia (cooperative roguelike) and Gravity Thief. Kothar: creation and commercialisation of an asset lifecycle management software. Running everything solo: game design, infrastructure, project management, communication, legal aspects."
                     },
                     "2": {
-                        "name": "Discovery - Software development and data analysis",
+                        "name": "Work-study - R&D Engineer",
+                        "date": {
+                            "month": 9,
+                            "year": 2022
+                        },
+                        "time": {
+                            "duration": 3,
+                            "unit": "years"
+                        },
+                        "company": "DV Group (formerly Fealinx)",
+                        "location": "Paris",
+                        "description": "Brain MRI annotation tool built on 3D Slicer to train AI models (European project RHU SHIVA). Development of a C# project management solution, in collaboration with project managers."
+                    },
+                    "3": {
+                        "name": "Research internship - Artificial Intelligence",
                         "date": {
                             "month": 7,
-                            "year": 2021
+                            "year": 2023
+                        },
+                        "time": {
+                            "duration": 3,
+                            "unit": "months"
+                        },
+                        "company": "Maynooth University",
+                        "location": "Maynooth, Ireland",
+                        "description": "Development of an AI generating music and singing, in an English-speaking environment."
+                    },
+                    "4": {
+                        "name": "Member of the local digital council",
+                        "date": {
+                            "month": 10,
+                            "year": 2022
                         },
                         "time": {
                             "duration": 1,
-                            "unit": "month"
+                            "unit": "year"
                         },
-                        "company": "Fealinx",
-                        "location": "Paris",
-                        "description": "Development of algorithms for processing and analyzing biomedical data in Python."
+                        "company": "Angers Loire Métropole",
+                        "location": "Angers",
+                        "description": "Proposed digital initiatives for Angers Loire Métropole, within a group of about fifty people."
                     },
-                    "1": {
+                    "5": {
                         "name": "Computer science private lessons",
                         "date": {
                             "month": 1,
@@ -240,19 +224,33 @@
                         "location": "Angers",
                         "description": "Private lessons to learn how to use computer tools (word, chrome, etc) on Windows."
                     },
-                    "0": {
-                        "name": "Internship - Research software ingeneer",
+                    "6": {
+                        "name": "Discovery - Software development and data analysis",
                         "date": {
-                            "month": 9,
-                            "year": 2022
+                            "month": 7,
+                            "year": 2021
                         },
                         "time": {
-                            "duration": 3,
-                            "unit": "years"
+                            "duration": 1,
+                            "unit": "month"
                         },
                         "company": "Fealinx",
                         "location": "Paris",
-                        "description": "Realization of Python software for the empowerment of Artificial Intelligence training in the medical field on the European RHU SHIVA project. I also developed a C# project management solution to automate certain tasks within the company."
+                        "description": "Development of algorithms for processing and analyzing biomedical data in Python."
+                    },
+                    "7": {
+                        "name": "Discovery - Assistant information system management",
+                        "date": {
+                            "month": 5,
+                            "year": 2017
+                        },
+                        "time": {
+                            "duration": 7,
+                            "unit": "days"
+                        },
+                        "company": "Abisse",
+                        "location": "Nantes",
+                        "description": "3rd year discovery internship with an assistant director of information systems of an IT services company."
                     }
                 }
             },
@@ -260,25 +258,15 @@
                 "title": "Formation",
                 "_total": 4,
                 "content": {
-                    "3": {
-                        "name": "Jean Mounes College",
+                    "0": {
+                        "name": "ESEO Engineering School",
                         "date": {
-                            "start": 2013,
-                            "end": 2017
+                            "start": 2020,
+                            "end": 2025
                         },
-                        "location": "Pornic",
-                        "diploma": "Brevet",
-                        "mention": "Very good"
-                    },
-                    "2": {
-                        "name": "Livet High School",
-                        "date": {
-                            "start": 2017,
-                            "end": 2020
-                        },
-                        "location": "Nantes",
-                        "diploma": "STI2D Baccalaureate option SIN",
-                        "mention": "Good"
+                        "location": "Angers",
+                        "diploma": "Engineering degree: Computer Science & Electronics",
+                        "mention": "5-year program, including 3 years of work-study"
                     },
                     "1": {
                         "name": "ESEO integrated preparatory class",
@@ -290,31 +278,41 @@
                         "diploma": "",
                         "mention": ""
                     },
-                    "0": {
-                        "name": "ESEO engineering school",
+                    "2": {
+                        "name": "Livet High School",
                         "date": {
-                            "start": 2022,
-                            "end": 2025
+                            "start": 2017,
+                            "end": 2020
                         },
-                        "location": "Angers",
-                        "diploma": "Engineer",
-                        "mention": "In progress"
+                        "location": "Nantes",
+                        "diploma": "BAC STI2D: Information Systems and Digital Technology",
+                        "mention": "Good"
+                    },
+                    "3": {
+                        "name": "Jean Mounes College",
+                        "date": {
+                            "start": 2013,
+                            "end": 2017
+                        },
+                        "location": "Pornic",
+                        "diploma": "Brevet",
+                        "mention": "Very good"
                     }
                 }
             },
             "associative": {
                 "title": "Associatif",
-                "_total": 3,
+                "_total": 4,
                 "content": {
-                    "2": {
-                        "name": "RobotESEO",
+                    "0": {
+                        "name": "ESEO Lab",
                         "date": {
                             "start": 2020,
-                            "end": 2022
+                            "end": 2025
                         },
-                        "role": "Vice-president",
-                        "description": "Within my school (ESEO), I created a new project in a robotics club. The theme of the project is robot fighting. Our goal is to participate in the world fights \"BattleBots\" as well as to organize them within the school. To do this, we learned to set up and manage a project, to work in a group as well as to build a robot and look for sponsors.",
-                        "link": "https://www.roboteseo.fr/"
+                        "role": "Co-founder",
+                        "description": "In 2020, with friends, we created ESEO Lab: an electronics, computer science and PC and phone repair club. We carried out several projects, shown at fairs and conferences, and organized events for school members and the public.",
+                        "link": "https://www.linkedin.com/company/80134017/"
                     },
                     "1": {
                         "name": "ESEO Lab",
@@ -326,15 +324,25 @@
                         "description": "In the club's second year, I was vice-president. I organised a number of events (conferences, workshops, etc), carried out demonstration and research projects, managed the membership and helped run the club.",
                         "link": "https://www.linkedin.com/company/80134017/"
                     },
-                    "0": {
-                        "name": "ESEO Lab",
+                    "2": {
+                        "name": "RobotESEO",
                         "date": {
                             "start": 2020,
-                            "end": 2025
+                            "end": 2022
                         },
-                        "role": "Active member",
-                        "description": "In 2020, some friends and I set up an electronics and computing club. We completed several projects and organised events for members of the school and the public. We have also completed several projects that have been exhibited at trade fairs and conferences.",
-                        "link": "https://www.linkedin.com/company/80134017/"
+                        "role": "Vice-president",
+                        "description": "Within my school's robotics club, I launched a robot combat project (Maker Fight), carried out as a team. To do this, we learned to set up and manage a project, to work in a group, to build a robot and to look for sponsors.",
+                        "link": "https://www.roboteseo.fr/"
+                    },
+                    "3": {
+                        "name": "Space conference",
+                        "date": {
+                            "start": 2022,
+                            "end": 2023
+                        },
+                        "role": "Organizer",
+                        "description": "Organized a conference on space at ESEO with an engineer from CNES and an engineer who worked at NASA. Project manager: event organization, communication with the speakers and team management.",
+                        "link": ""
                     }
                 }
             }

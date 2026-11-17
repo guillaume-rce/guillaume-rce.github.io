@@ -14,13 +14,15 @@ import LanguageCard from "./LanguageCard";
 
 const CvPerso = () => {
   const { t } = useTranslation();
-  const dateBirth = new Date(2002, 12, 17);
+  const dateBirth = new Date(2002, 11, 17); // les mois commencent à 0 : 11 = décembre
   const dateNow = new Date();
-  const age = dateNow.getFullYear() - dateBirth.getFullYear();
+  const hadBirthday = dateNow.getMonth() > dateBirth.getMonth()
+    || (dateNow.getMonth() === dateBirth.getMonth() && dateNow.getDate() >= dateBirth.getDate());
+  const age = dateNow.getFullYear() - dateBirth.getFullYear() - (hadBirthday ? 0 : 1);
 
   return (
-    <Stack direction="column" spacing={4} width={"30%"}
-      maxWidth={"400px"}>
+    <Stack direction="column" spacing={4}
+      sx={{ width: { xs: "100%", md: "30%" }, maxWidth: { md: "400px" }, flexShrink: 0 }}>
       <img
         src={ProfilePhoto}
         alt="Profile"
@@ -29,15 +31,15 @@ const CvPerso = () => {
           marginLeft: "auto", marginRight: "auto"
         }}
       />
-      <Stack direction="column" spacing={2} alignItems="flex-end" width="100%">
+      <Stack direction="column" spacing={2}
+        sx={{ alignItems: "center", width: "100%" }}>
         <Typography
           align="center"
           gutterBottom
-          color={"white"}
           variant="h4"
-          sx={{
+          sx={{ color: "white",
             fontSize: {
-              xs: "1rem",
+              xs: "1.75rem",
               md: "1.5rem",
               lg: "2rem",
             }
@@ -46,7 +48,8 @@ const CvPerso = () => {
         >
           Guillaume ROCHE
         </Typography>
-        <Stack direction="row" justifyContent="end" spacing={1} useFlexGap flexWrap="wrap">
+        <Stack direction="row" spacing={1} useFlexGap
+          sx={{ justifyContent: "center", flexWrap: "wrap" }}>
           <Chip label={age + " " + t("cv.personal.age")} variant="outlined" style={{ color: "#fff" }} />
           <Chip label={t("cv.personal.license")} variant="outlined" style={{ color: "#fff" }} />
         </Stack>
@@ -74,10 +77,10 @@ const CvPerso = () => {
       </Stack>
       <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)' }} />
       <Stack direction="column" spacing={1}>
-        <Typography color={"white"} variant="h6">
+        <Typography variant="h6" sx={{ color: "white" }}>
           {t("cv.personal.languages.title")}
         </Typography>
-        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+        <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
           <div style={{ flex: 1 }}>
             <LanguageCard
               language={t("cv.personal.languages.french")}
@@ -92,7 +95,7 @@ const CvPerso = () => {
           <div style={{ flex: 1 }}>
             <LanguageCard
               language={t("cv.personal.languages.english")}
-              langSubtitle={t("cv.personal.languages.intermediate")}
+              langSubtitle={t("cv.personal.languages.professional")}
               certLogo={
                 "https://certificate.bcdiploma.com/dist/157_0x1B/logo-ets-toeic-173314ec.svg"
               }
@@ -104,10 +107,10 @@ const CvPerso = () => {
       </Stack>
       <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.6)' }} />
       <Stack direction="column" spacing={1}>
-        <Typography color={"white"} variant="h6">
+        <Typography variant="h6" sx={{ color: "white" }}>
           {t("cv.personal.interests.title")}
         </Typography>
-        <Stack direction="row" spacing={1} useFlexGap flexWrap="wrap">
+        <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}>
           {Array.from({ length: parseInt(t("cv.personal.interests._total")) }).map((_, i) => (
             <Chip
               key={i}

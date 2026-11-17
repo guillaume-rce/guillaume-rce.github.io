@@ -1,20 +1,21 @@
 import { Collapse, IconButton, Stack, Typography, Divider } from "@mui/material";
 import { useState } from "react";
-import { Timeline, TimelineItem, TimelineOppositeContent, TimelineSeparator, TimelineDot, TimelineConnector, TimelineContent } from "@mui/lab";
+import { Timeline } from "@mui/lab";
+import ResponsiveTimelineItem, { timelineSx } from "../UI/ResponsiveTimelineItem";
 import TimerIcon from "@mui/icons-material/Timer";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import { useTranslation } from "react-i18next";
 
 const Experiences = () => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [open, setOpen] = useState(true);
 
     return (
-        <Stack direction="column" spacing={4} id="experiences">
-            <Stack direction="row" alignItems="center" justifyContent="space-between"
-                onClick={() => setOpen(!open)} >
-                <Typography variant="h4" gutterBottom color="white">
+        <Stack direction="column" spacing={1} id="experiences">
+            <Stack direction="row"
+                style={{ cursor: "pointer" }} onClick={() => setOpen(!open)} sx={{ alignItems: "center", justifyContent: "space-between" }} >
+                <Typography variant="h4" gutterBottom sx={{ color: "white" }}>
                     {t("cv.main.experiences.title")}
                 </Typography>
                 <IconButton>
@@ -24,48 +25,48 @@ const Experiences = () => {
                 </IconButton>
             </Stack>
             <Collapse in={open}>
-                <Timeline>
+                <Timeline sx={timelineSx}>
                     {
                         Array.from({ length: parseInt(t("cv.main.experiences._total")) }, (_, i) => (
-                            <TimelineItem key={i}>
-                                <TimelineOppositeContent sx={{ flex: 0.2 }}>
-                                    <Typography variant="subtitle1" color="white">
+                            <ResponsiveTimelineItem
+                                key={i}
+                                last={parseInt(t("cv.main.experiences._total")) - 1 === i}
+                                opposite={<>
+                                    <Typography variant="subtitle1" sx={{ color: "white" }}>
                                         {
-                                            (parseInt(t("cv.main.experiences.content." + i + ".date.month")) < 10 ? 
+                                            (parseInt(t("cv.main.experiences.content." + i + ".date.month")) < 10 ?
                                                 "0" + t("cv.main.experiences.content." + i + ".date.month") :
                                                 t("cv.main.experiences.content." + i + ".date.month"))
                                             + "/" + t("cv.main.experiences.content." + i + ".date.year")
                                         }
                                     </Typography>
-                                    <Stack direction="row" spacing={1} alignItems="center" justifyContent="end">
+                                    <Stack direction="row" spacing={1} sx={{ alignItems: "center", justifyContent: "end" }}>
                                         <TimerIcon style={{ color: "#959595" }} fontSize="small" />
-                                        <Typography variant="subtitle1" color="white">
-                                            {t("cv.main.experiences.content." + i + ".time.duration") + " " + t("cv.main.experiences.content." + i + ".time.unit")}
+                                        <Typography variant="subtitle1" sx={{ color: "white" }}>
+                                            {(i18n.exists("cv.main.experiences.content." + i + ".time.duration")
+                                                ? t("cv.main.experiences.content." + i + ".time.duration") + " "
+                                                : "") + t("cv.main.experiences.content." + i + ".time.unit")}
                                         </Typography>
                                     </Stack>
-                                </TimelineOppositeContent>
-                                <TimelineSeparator>
-                                    <TimelineDot />
-                                    {parseInt(t("cv.main.experiences._total")) - 1 !== i && <TimelineConnector />}
-                                </TimelineSeparator>
-                                <TimelineContent>
-                                    <Typography variant="h6" gutterBottom color="white">
-                                        {t("cv.main.experiences.content." + i + ".name")}
+                                </>}
+                            >
+                                <Typography variant="h6" gutterBottom sx={{ color: "white" }}>
+                                    {t("cv.main.experiences.content." + i + ".name")}
+                                </Typography>
+                                <Stack direction="row" spacing={1} useFlexGap sx={{ flexWrap: "wrap" }}
+                                    divider={<Divider orientation="vertical" flexItem sx={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }} />}>
+                                    <Typography variant="subtitle1" sx={{ color: "white" }}>
+                                        {t("cv.main.experiences.content." + i + ".company")}
                                     </Typography>
-                                    <Stack direction="row" spacing={1} divider={<Divider orientation="vertical" flexItem sx={{ backgroundColor: 'rgba(255, 255, 255, 0.2)' }} />}>
-                                        <Typography variant="subtitle1" color="white">
-                                            {t("cv.main.experiences.content." + i + ".company")}
-                                        </Typography>
-                                        <Typography variant="subtitle1" color="white">
-                                            {t("cv.main.experiences.content." + i + ".location")}
-                                        </Typography>
-                                    </Stack>
-                                    <Typography variant="body1" color="white">
-                                        {t("cv.main.experiences.content." + i + ".description")}
+                                    <Typography variant="subtitle1" sx={{ color: "white" }}>
+                                        {t("cv.main.experiences.content." + i + ".location")}
                                     </Typography>
-                                    {(t("cv.main.experiences._total") - 1 !== i) && <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', mt: 2 }} />}
-                                </TimelineContent>
-                            </TimelineItem>
+                                </Stack>
+                                <Typography variant="body1" sx={{ color: "#c9d6d9", lineHeight: 1.65, mt: 0.5 }}>
+                                    {t("cv.main.experiences.content." + i + ".description")}
+                                </Typography>
+                                {(t("cv.main.experiences._total") - 1 !== i) && <Divider sx={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', mt: 2 }} />}
+                            </ResponsiveTimelineItem>
                         ))
                     }
                 </Timeline>

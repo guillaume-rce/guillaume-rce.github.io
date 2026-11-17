@@ -35,10 +35,12 @@ const Multiselect = ({ options, label, selectedOptions, setSelectedOptions }) =>
                 renderValue={(selected) => selected.join(', ')}
                 input={<OutlinedInput id="outlined-multiselect" label={label} />}
                 MenuProps={{
-                    PaperProps: {
-                        sx: {
-                            backgroundColor: "#c8e3e9",
-                            color: "#0d1d21",
+                    slotProps: {
+                        paper: {
+                            sx: {
+                                backgroundColor: "#c8e3e9",
+                                color: "#0d1d21",
+                            },
                         },
                     },
                 }}
@@ -59,7 +61,7 @@ const Multiselect = ({ options, label, selectedOptions, setSelectedOptions }) =>
             >
                 {options.map((option) => (
                     <MenuItem key={option} value={option} >
-                        <Stack direction="row" alignItems="center">
+                        <Stack direction="row" sx={{ alignItems: "center" }}>
                             <Checkbox
                                 checked={selectedOptions.indexOf(option) > -1}
                                 id={option}

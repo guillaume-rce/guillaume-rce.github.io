@@ -1,0 +1,123 @@
+.space-scene {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.space-scene__glow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 55%;
+    background: linear-gradient(to top, #2a5764 0%, rgba(42, 87, 100, 0.45) 40%, rgba(42, 87, 100, 0) 100%);
+}
+
+.space-scene__dots {
+    position: absolute;
+    inset: 0;
+}
+
+/* Plan de parallax : décalé vers le bas d'une fraction du scroll => il paraît défiler plus lentement */
+.space-scene__layer {
+    position: absolute;
+    inset: 0;
+    transform: translate3d(0, calc(var(--parallax, 0px) * var(--depth, 0)), 0);
+    will-change: transform;
+}
+
+.space-scene__item {
+    position: absolute;
+    height: auto;
+}
+
+/* Fusée : le corps au-dessus, les flammes sortent de la tuyère */
+.rocket__body {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.rocket__flame {
+    position: absolute;
+    left: 50%;
+    /* sort de l'encoche de la tuyère, entre les deux ailerons */
+    top: 91%;
+    width: 54%;
+    height: auto;
+    transform: translateX(-50%);
+    transform-origin: 50% 0;
+    overflow: visible;
+}
+
+.rocket__flame-outer,
+.rocket__flame-inner {
+    transform-box: fill-box;
+    transform-origin: 50% 0;
+}
+
+.rocket__flame-outer {
+    animation: flame 0.24s ease-in-out infinite alternate;
+}
+
+.rocket__flame-inner {
+    animation: flame 0.18s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes flame {
+    from {
+        transform: scaleY(0.86);
+    }
+
+    to {
+        transform: scaleY(1.04);
+    }
+}
+
+.space-scene__land {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.space-scene__land > svg {
+    display: block;
+}
+
+.sparkle {
+    position: absolute;
+    animation: sparkle 4s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%,
+    100% {
+        opacity: 0.9;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.35;
+        transform: scale(0.7);
+    }
+}
+
+/* Sur mobile, le texte occupe le haut du bloc : pas d'étoile scintillante par-dessus */
+@media (max-width: 899.95px) {
+    .sparkle--high {
+        display: none;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .sparkle,
+    .rocket__flame-outer,
+    .rocket__flame-inner {
+        animation: none;
+    }
+}

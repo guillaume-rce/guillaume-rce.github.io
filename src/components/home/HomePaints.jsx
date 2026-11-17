@@ -4,6 +4,7 @@ import './HomePaints.css';
 import i18n from '../../translations/i18n';
 import { Chip, Stack, Typography } from '@mui/material';
 import EventIcon from '@mui/icons-material/Event';
+import { sectionPx } from '../UI/layout';
 
 const resources = import.meta.glob('/src/resources/**/*', { eager: true, import: 'default' });
 
@@ -61,13 +62,13 @@ const HomePaints = () => {
             style={{
               position: 'relative',
               zIndex: '1',
-              padding: '5vh 180px',
-              width: '100vw',
+              width: '100%',
               height: '100vh',
               background: 'linear-gradient(180deg, rgba(13,29,33,1) 0%, rgba(13,29,33,0) 20%)',
-            }} >
-            <Typography variant="h4" className='title' color={"white"}>{paints[0].name[lang]}</Typography>
-            <Stack direction="row" spacing={2}>
+            }}
+            sx={{ py: '5vh', px: sectionPx }} >
+            <Typography variant="h4" className='title' sx={{ color: "white" }}>{paints[0].name[lang]}</Typography>
+            <Stack direction="row" spacing={{ xs: 1, sm: 2 }} useFlexGap sx={{ flexWrap: 'wrap' }}>
               <Chip label={paints[0].year} style={{ backgroundColor: '#f0f0f0b0', color: '#0d1d21' }}
                 icon={<EventIcon />} />
               {types.map((type, index) => (

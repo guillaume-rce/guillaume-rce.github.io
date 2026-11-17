@@ -7,7 +7,7 @@ import HomePrizes from "../home/prize/HomePrizes";
 
 const CvMain = () => {
     return (
-        <Stack direction="column" spacing={4}>
+        <Stack direction="column" spacing={4} sx={{ flex: 1, minWidth: 0 }}>
             <Competences />
             <Experiences />
             <Formations />

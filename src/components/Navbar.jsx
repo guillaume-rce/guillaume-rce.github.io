@@ -6,21 +6,24 @@ import Box from '@mui/material/Box';
 import IconButton from '@mui/material/IconButton';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Stack } from '@mui/system';
+import Stack from '@mui/material/Stack';
 
 import './Navbar.css';
 
 import { useTranslation } from 'react-i18next';
 import i18n from 'i18next';
-import { useHistory } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export default function Navbar() {
     const { t } = useTranslation();
-    const history = useHistory();
+    const navigate = useNavigate();
+    const { pathname } = useLocation();
     const [drawerOpen, setDrawerOpen] = useState(false);
+
+    const isActive = (link) => (link === '/' ? pathname === '/' : pathname.startsWith(link));
 
     const menuItems = [
         { text: t('navbar.home'), link: '/' },
@@ -33,12 +36,12 @@ export default function Navbar() {
     const handleTranslate = (lng) => {
         if (i18n.language !== lng) {
             localStorage.setItem('i18nextLng', lng);
-            i18n.changeLanguage([lng]);
+            i18n.changeLanguage(lng);
         }
     };
 
     return (
-        <AppBar position="relative" zIndex={10} elevation={0}>
+        <AppBar position="relative" sx={{ zIndex: 10 }} elevation={0}>
             <Toolbar className="navbar-container">
                 {/* Bouton Drawer à gauche */}
                 <IconButton
@@ -58,16 +61,16 @@ export default function Navbar() {
                 >
                     <List sx={{ width: 250 }}>
                         {menuItems.map((item) => (
-                            <ListItem
-                                button
+                            <ListItemButton
                                 key={item.text}
+                                selected={isActive(item.link)}
                                 onClick={() => {
-                                    history.push(item.link);
+                                    navigate(item.link);
                                     setDrawerOpen(false);
                                 }}
                             >
                                 <ListItemText primary={item.text} />
-                            </ListItem>
+                            </ListItemButton>
                         ))}
                     </List>
                 </Drawer>
@@ -85,8 +88,8 @@ export default function Navbar() {
                         <Button
                             color="inherit"
                             key={item.text}
-                            className="navbar-button"
-                            onClick={() => history.push(item.link)}
+                            className={isActive(item.link) ? "navbar-button active" : "navbar-button"}
+                            onClick={() => navigate(item.link)}
                         >
                             {item.text}
                         </Button>

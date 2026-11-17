@@ -10,7 +10,7 @@ import Cv from './pages/Cv';
 
 import './translations/i18n';
 
-import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import { ProjectsProvider } from './context/ProjectsContext';
 import { PaintsProvider } from './context/PaintsContext';
 import { PrizeProvider } from './context/PrizeContext';
@@ -23,14 +23,14 @@ root.render(
       <ProjectsProvider>
         <PaintsProvider>
           <PrizeProvider>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/projects" component={Projects} />
-              <Route exact path="/contact" component={Contact} />
-              <Route exact path="/projects/:id" component={Projects} />
-              <Route exact path="/cv" component={Cv} />
-              <Route component={NotFound} />
-            </Switch>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:id" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/cv" element={<Cv />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
           </PrizeProvider>
         </PaintsProvider>
       </ProjectsProvider>

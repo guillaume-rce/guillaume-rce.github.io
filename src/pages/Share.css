@@ -8,12 +8,6 @@
     margin: 0;
 }
 
-@media (max-width: 600px) {
-    .background {
-        padding: 8px;
-    }
-}
-
 
 @keyframes blink {
     0%,

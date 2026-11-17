@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, CardMedia } from '@mui/material';
-import { styled } from '@mui/system';
+import { styled } from '@mui/material/styles';
 
 const BannerContainer = styled(Box)(({ theme }) => ({
   position: 'relative',

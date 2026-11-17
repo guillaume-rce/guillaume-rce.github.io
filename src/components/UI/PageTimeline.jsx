@@ -1,98 +1,56 @@
-import React, { useEffect, useState, useRef } from 'react';
-import {
-    Timeline, TimelineConnector, TimelineContent,
-    TimelineDot, TimelineItem, TimelineSeparator
-} from "@mui/lab";
-import './PageTimeline.css';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import i18n from '../../translations/i18n';
+import './PageTimeline.css';
 
+// Index vertical fixé à droite : un libellé + un petit trait par section,
+// la section visible est mise en avant.
 const PageTimeline = ({ pageObjects, document }) => {
-    const { t } = useTranslation();
+    const { i18n } = useTranslation();
     const lang = i18n.language;
 
-    const [currentObjectId, setCurrentObjectId] = useState(null);
-    const observer = useRef(null);
+    const [currentObjectId, setCurrentObjectId] = useState(pageObjects[0]?.objectId ?? null);
 
     useEffect(() => {
-        const options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.1
-        };
-
-        observer.current = new IntersectionObserver((entries) => {
+        // Une section est active quand elle traverse le milieu de l'écran
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setCurrentObjectId(entry.target.id);
                 }
             });
-        }, options);
+        }, { rootMargin: '-45% 0px -45% 0px', threshold: 0 });
 
         pageObjects.forEach(pageObject => {
             const element = document.getElementById(pageObject.objectId);
             if (element) {
-                observer.current.observe(element);
+                observer.observe(element);
             }
         });
 
-        return () => {
-            if (observer.current) {
-                observer.current.disconnect();
-            }
-        };
+        return () => observer.disconnect();
     }, [pageObjects, document]);
 
-    const handleMouseOver = (index) => {
-        const timelineDot = document.getElementsByClassName('timelineDot')[index];
-        const timelineContent = document.getElementsByClassName('timelineContent')[index];
-        timelineDot.classList.add('hovered');
-        timelineContent.classList.add('hovered');
-    };
-
-    const handleMouseOut = (index) => {
-        const timelineDot = document.getElementsByClassName('timelineDot')[index];
-        const timelineContent = document.getElementsByClassName('timelineContent')[index];
-        timelineDot.classList.remove('hovered');
-        timelineContent.classList.remove('hovered');
-    };
-
     const onSelect = (pageObject) => {
-        document.getElementById(pageObject.objectId).scrollIntoView({
+        document.getElementById(pageObject.objectId)?.scrollIntoView({
             behavior: 'smooth'
         });
-        setCurrentObjectId(pageObject.id);
+        setCurrentObjectId(pageObject.objectId);
     };
 
     return (
-        <Timeline className="timeline">
-            {pageObjects.map((pageObject, index) => (
-                <TimelineItem key={index}
-                    className='timelineItem'
-                    onMouseOver={() => handleMouseOver(index)}
-                    onMouseOut={() => handleMouseOut(index)}
+        <nav className="timeline">
+            {pageObjects.map((pageObject) => (
+                <button
+                    type="button"
+                    key={pageObject.objectId}
+                    className={pageObject.objectId === currentObjectId ? 'timelineItem active' : 'timelineItem'}
                     onClick={() => onSelect(pageObject)}
                 >
-                    <TimelineSeparator>
-                        <TimelineDot
-                            className={pageObject.objectId === currentObjectId ?
-                                'timelineDot primary' : 'timelineDot'}
-                        />
-                        {
-                            index < pageObjects.length - 1 &&
-                            <TimelineConnector className="timelineConnector" />
-                        }
-                    </TimelineSeparator>
-                    <TimelineContent
-                        className={pageObject.objectId === currentObjectId ?
-                            'timelineContent primary' : 'timelineContent'}
-                        onClick={() => onSelect(pageObject)}
-                    >
-                        {pageObject.name[lang]}
-                    </TimelineContent>
-                </TimelineItem>
+                    <span className="timelineLabel">{pageObject.name[lang] ?? pageObject.name.en}</span>
+                    <span className="timelineTick" />
+                </button>
             ))}
-        </Timeline>
+        </nav>
     );
 }
 

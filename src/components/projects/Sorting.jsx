@@ -26,8 +26,8 @@ function Sorting({ selectedType, setSelectedType }) {
     };
 
     return (
-        <Stack direction="row" spacing={2}>
-            <FormControl sx={{ m: 1, width: 300 }}>
+        <Stack direction="row" spacing={2} sx={{ width: { xs: '100%', sm: 'auto' } }}>
+            <FormControl sx={{ m: { xs: 0, sm: 1 }, width: { xs: '100%', sm: 300 } }}>
                 <InputLabel htmlFor="outlined-select"
                     sx={{
                         color: "#ff5859",
@@ -50,10 +50,12 @@ function Sorting({ selectedType, setSelectedType }) {
                         )
                     }
                     MenuProps={{
-                        PaperProps: {
-                            sx: {
-                                backgroundColor: "#c8e3e9",
-                                color: "#0d1d21",
+                        slotProps: {
+                            paper: {
+                                sx: {
+                                    backgroundColor: "#c8e3e9",
+                                    color: "#0d1d21",
+                                },
                             },
                         },
                     }}
